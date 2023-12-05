@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/reservacion.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservación para empresas</title>
+</head>
+<body>
+    <nav>
+        <h1 class="titulo-pagina">Hotel easy</h1>
+    <section class="presentacion" id="imagen-hotel">
+        <img
+            src="hotel.jpg"
+            alt ="easy-hotel"
+            loading="lazy"
+            class="hotel-img"
+        />
+    </section>
+    <section class="reservas" id="reservas">
+        <h2>Reservación para empresas</h2>
+        <div class="contenedor-formulario-de-empresas">
+            <div class="formulario-de-empresas">
+                <form action="https://formspree.io/f/xyylngw" method="post">
+                    <div class="control-formulario">
+                        <label for="email">Razón social</label>
+                        <input
+                        type="razón-social"
+                        id="razón-social"
+                        name="sender-razon-social"
+                        placeholder="Razón social"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="email">Correo Electrónico corporativo</label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Ingresa correo electrónico"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="name">Tipo de habitación</label>
+                        <select class="habitaciones" id="habitaciones">
+                            <option>Habitación en el mostrador</option>
+                            <option>Habitación para no fumadores</option>
+                        </select>
+            
+                    </div>
+                    <div class="control-formulario">
+                        <label for="name">Tipo de pensión</label>
+                        <select class="tipo-pension" id="tipo-pension">
+                            <option>Una noche</option>
+                            <option>Media pensión</option>
+                            <option>Pensión completa</option>
+                        </select>
+                    <div class="control-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea
+                        id="mensaje"
+                        cols="60"
+                        rows="10"
+                        placeholder="Escribe tu mensaje"
+                        name="mensaje"
+                        class="input-field"
+                        required
+                        ></textarea>
+                    </div>
+                        <input
+                        type="submit"
+                        value="Enviar"
+                        id="submit-btn"
+                        class="submit-btn"
+                        />
+                </form>
+            </div>
+        </div>
+        <a href="index.html">Regresar a la página principal</a>
+    </section>
+</body>
+</html>

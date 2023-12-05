@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu hotel</title>
+</head>
+<body>
+    <nav>
+        <h1>Hotel easy</h1>
+        <ul class="menu_navegacion">
+            <li>    
+                <a href="#hoteles" class="nav-link">Hoteles</a></li>
+                <li> <a href="#reservas" class="nav-link">Reservas</a></li>
+                <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                <li><a href="#contactos" class="nav-link">Contactos</a></li>
+            </li>
+        </ul>
+        <button class="menu-hotel" id ="menu-hotel">
+            <icon class="barras" name="menu-outline"></icon>
+        </button>
+    </nav>
+    <section class="presentacion" id="imagen-hotel">
+        <img
+            src="/icons/hotelesprueba-2.gif"
+            alt ="easy-hotel"
+            loading="lazy"
+            class="hotel-img"
+        />
+    </section>
+    <section class="hoteles" id="hoteles">
+        <h2 class="titulo-hoteles">Hoteles en Colombia</h2>
+       <div class="contenedor-hoteles">
+            <div class="contenedor-de-hoteles tarjeta-de-hotles">
+                <img
+                src="/icons/dann.jpg"
+                alt=""
+                loading="lazy"
+                class="foto-de-hotel"
+            />
+            <h3 class="titulo-de-hotel">Hotel Dann Monasterio</h3>
+            <p class="detalle-de-hoteles">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi
+                quos culpa aut saepe!
+                Alias!
+            </p>
+            </div>
+            <div class="contenedor-de-hoteles tarjeta-de-hotles">
+                <img
+                src="/icons/four.jpg"
+                alt=""
+                loading="lazy"
+                class="foto-de-hotel"
+            />
+            <h3 class="titulo-de-hotel">Hotel Four Seassons</h3>
+            <p class="detalle-de-hoteles">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi
+                quos culpa aut saepe!
+                Alias!
+            </p>
+            </div>
+            <div class="contenedor-de-hoteles tarjeta-de-hotles">
+                <img
+                src="/icons/santamarta.jpg"
+                alt=""
+                loading="lazy"
+                class="foto-de-hotel"
+            />
+            <h3 class="titulo-de-hotel">Estelar Santamar Hotel & Convention Center</h3>
+            <p class="detalle-de-hoteles">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi
+                quos culpa aut saepe!
+                Alias!
+            </p>
+            </div>
+       </div>
+    </section>
+    <section class="eventos" id="eventos">
+        <h2 class="titulo-eventos">Eventos</h2>
+       <div class="contenedor-eventos">
+            <div class="contenedor-de-eventos tarjeta-de-eventos">
+                <img
+                src="/icons/boda.jpg"
+                alt=""
+                loading="lazy"
+                class="foto-de-evento"
+            />
+            <h3 class="titulo-de-evento">Bodas</h3>
+            <p class="detalle-de-evento">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi
+                quos culpa aut saepe!
+                Alias!
+            </p>
+            </div>
+            <div class="contenedor-de-eventos tarjeta-de-eventos">
+                <img
+                src="/icons/convencion.jpg"
+                alt=""
+                loading="lazy"
+                class="foto-de-evento"
+            />
+            <h3 class="titulo-de-evento">Convenciones</h3>
+            <p class="detalle-de-evento">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi
+                quos culpa aut saepe!
+                Alias!
+            </p>
+            </div>
+            <div class="contenedor-de-eventos tarjeta-de-eventos">
+                <img
+                src="/icons/vacaciones.jpg"
+                alt=""
+                loading="lazy"
+                class="foto-de-evento"
+            />
+            <h3 class="titulo-de-evento">Vaciones en familia</h3>
+            <p class="detalle-de-evento">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+                ratione vel inventore labore commodi modi
+                quos culpa aut saepe!
+                Alias!
+            </p>
+            </div>
+       </div>
+    </section>
+    <section class="reservas" id="reservas">
+        <h2>Reservas</h2>
+        <div class="contenedor-formulario-de-reservas">
+            <div class="formulario-de-reservas">
+                <form action="https://formspree.io/f/xyylngw" method="post">
+                    <div class="control-formulario">
+                        <label for="name">Nombre</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Escribe tu nombre"
+                            class="input-field"
+                            required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="name">Tipo de habitación</label>
+                        <select class="habitaciones" id="habitaciones">
+                            <option>Habitación en el mostrador</option>
+                            <option>Habitación para no fumadores</option>
+                        </select>
+            
+                    </div>
+                    <div class="control-formulario">
+                        <label for="name">Tipo de pensión</label>
+                        <select class="tipo-pension" id="tipo-pension">
+                            <option>Una noche</option>
+                            <option>Media pensión</option>
+                            <option>Pensión completa</option>
+                        </select>
+            
+                    </div>
+                    <div class="control-formulario">
+                        <label for="name">Cuenta bancaria</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="digita el número"
+                            class="input-field"
+                            required
+                        />
+                    <div class="control-formulario">
+                        <label for="email">Correo Electrónico</label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Ingresa tu correo"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea
+                        id="mensaje"
+                        cols="60"
+                        rows="10"
+                        placeholder="Escribe tu mensaje"
+                        name="mensaje"
+                        class="input-field"
+                        required
+                        ></textarea>
+                    </div>
+                        <input
+                        type="submit"
+                        value="Enviar"
+                        id="submit-btn"
+                        class="submit-btn"
+                        />
+                </form>
+            </div>
+        </div>
+        <a href="reservacion.html">Si eres empresa has click aquí</a>
+    </section>
+    
+    <section class="contactos" id="contactos">
+        <h2>Contactanos</h2>
+        <div class="formulario-contacto-contenedor">
+            <div class="formulario-contacto">
+                <form action="https://formspree.io/f/xyylngw" method="POST">
+                    <div class="control-formulario">
+                        <label for="name">Nombre</label>
+                        <input
+                        type="text"
+                        id="name"
+                        name="sender-name"
+                        placeholder="Escribe tu nombre"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="email">Correo Electrónico</label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="sender-email"
+                        placeholder="Ingreso tu correo electrónico"
+                        class="input-field"
+                        required
+                        />
+                    </div>
+                    <div class="control-formulario">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea
+                        id="mensaje"
+                        cols="60"
+                        rows="10"
+                        placeholder="Escribe tu mensaje"
+                        name="mensaje"
+                        class="input-field"
+                        required
+                        ></textarea>
+                    </div>
+                        <input
+                        type="submit"
+                        value="Enviar"
+                        id="submit-btn"
+                        class="submit-btn"
+                        />
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="sociales">
+        <a href="https://twitter.com/?lang=es" target="_blank">
+            <img
+            src="/icons/twitter.png"
+            alt="Twitter"
+            loading="lazy"
+            class="socicon"
+            />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img
+            src="/icons/instagram.jpg"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+            />
+        </a>
+        <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank">
+            <img
+            src="/icons/facebook.png"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+            />
+        </a>
+    </div>
+    <footer>
+        <p class="copy">&copy; Copyright 2021</p>
+        <p class="copy">
+        Built with &copy; by
+        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"
+        >johansan799@gmail.com
+        </a>
+        </p>
+    </footer>
+<i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba">
+    <img
+    src="/icons/flecha-arriba.png"
+    class="flecha-arriba"
+    alt="desplazarse-hacia-arriba"
+    />
+</i>
+
+</body>
+</html>
